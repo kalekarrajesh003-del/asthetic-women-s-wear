@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Atelier | Aesthetic Women's Wear</title>
+    <style>
+        /* CSS Reset and Core Theme Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        :root {
+            --bg-color: #faf6f0;       /* Soft warm cream background */
+            --text-color: #332c25;     /* Deep earthy brown text */
+            --accent-color: #c48b6d;   /* Muted terracotta accent */
+            --light-beige: #f3eae1;    /* Secondary lighter layout background */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Clickable Navigation Bar */
+        header {
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #eee7de;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Common Page Sections */
+        .section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 4px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+            color: var(--text-color);
+        }
+
+        /* Shop Photo & Hero Header */
+        .shop-hero {
+            text-align: center;
+        }
+        .shop-photo {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .shop-hero h1 {
+            font-size: 34px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            font-weight: 300;
+        }
+        .shop-hero p {
+            font-size: 16px;
+            color: #706256;
+            font-style: italic;
+        }
+
+        /* Shop Information text */
+        .info-text {
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: #50443c;
+        }
+
+        /* About Service Grid Layout */
+        .services-row {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-card {
+            flex: 1;
+            background-color: var(--bg-color);
+            padding: 30px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #eee7de;
+        }
+        .service-card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            color: var(--text-color);
+        }
+        .service-card p {
+            font-size: 14px;
+            color: #706256;
+        }
+
+        /* Clickable Contact Footer Section */
+        .contact-footer {
+            background-color: var(--text-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
+        .contact-footer h2 {
+            color: #ffffff;
+        }
+        .contact-details {
+            font-size: 16px;
+            line-height: 2.2;
+            margin-bottom: 45px;
+        }
+        .contact-details a {
+            color: #e6bfa7;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px dashed #e6bfa7;
+        }
+        .contact-details a:hover {
+            color: #ffffff;
+            border-bottom-style: solid;
+        }
+        .copyright {
+            font-size: 12px;
+            color: #a3958a;
+        }
+
+        /* Small screen optimization */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .services-row {
+                flex-direction: column;
+            }
+            .shop-photo {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Clickable Navigation Bar -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">Aura Atelier</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home: Shop Photo & Welcome Section -->
+    <main class="section" id="home">
+        <div class="shop-hero">
+            <!-- Curated high-quality aesthetic apparel placeholder image -->
+            <img class="shop-photo" src="https://unsplash.com" alt="Minimalist Fashion Collection">
+            <h1>Timeless Capsule Wardrobes</h1>
+            <p>Effortless elegance designed for the modern woman.</p>
+        </div>
+    </main>
+
+    <!-- About: Shop Information -->
+    <section class="section" id="about">
+        <h2>About Our Shop</h2>
+        <p class="info-text">
+            Welcome to Aura Atelier. We believe clothing should be a reflection of calm, confidence, and comfort. 
+            Our boutique specializes in intentional women's wear featuring soft neutral tones, breathable organic linens, 
+            and fluid silhouettes that outlast seasonal trends. Every piece is curated to offer seamless transition from relaxed daytime styling to structured evening wear.
+        </p>
+    </section>
+
+    <!-- About Service Section -->
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="services-row">
+            <div class="service-card">
+                <h3>Curated Drops</h3>
+                <p>Limited-edition small-batch releases focusing on premium textile quality.</p>
+            </div>
+            <div class="service-card">
+                <h3>Digital Lookbooks</h3>
+                <p>Personal styling guide pairings curated to help build your signature capsule look.</p>
+            </div>
+            <div class="service-card">
+                <h3>Conscious Delivery</h3>
+                <p>Eco-friendly, entirely plastic-free packaging shipped seamlessly directly to your door.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clickable Contact Section -->
+    <footer class="contact-footer" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <p>Have questions about sizes, fabrics, or orders? Drop us a message.</p>
+            <p>Email: <a href="mailto:hello@auraatelier.com">hello@auraatelier.com</a></p>
+            <p>Instagram DM: <a href="https://instagram.com" target="_blank" rel="noopener">@aura.atelier</a></p>
+            <p>Boutique Showroom Hours: Monday – Saturday | 10:00 AM – 6:00 PM</p>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Aura Atelier. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
